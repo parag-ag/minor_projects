@@ -10,6 +10,6 @@ class Handler(BaseHTTPRequestHandler):
 		self.wfile.write("Helllllllloooooooooooo".encode())
 
 if __name__ == '__main__':
-	server = ('',8000)
+	server = ('',9999)
 	httpd = HTTPServer(server,Handler)
 	httpd.serve_forever()
